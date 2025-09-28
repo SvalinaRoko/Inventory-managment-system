@@ -1,0 +1,58 @@
+html{
+    font-size: 62.5%;
+}
+body {
+    font-family: sans-serif;
+    max-width: 140rem;
+    min-height: 100vh;
+    font-size: 1.8rem;
+    font-weight: 500;
+    box-sizing:border-box;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 0;
+    color:#333;
+    background-color: bisque;
+}.header{
+    margin-bottom: 20rem;
+
+}
+.main-nav{
+    padding: 2rem;
+
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+}
+.logo{
+    max-width: 10rem;
+    height: 10rem;
+    cursor: pointer;
+}
+.nav-links{
+    display: flex;
+    gap: 4rem;
+
+    font-weight: 600;
+    list-style: none;
+}
+.nav-link{
+    text-decoration: none;
+    color: #333;
+}
+.section-hero{
+    margin-bottom: 20rem;
+
+}
+.section-features{
+    margin-bottom: 20rem;
+}
+.footer-section{
+    position: fixed;
+    text-align: center;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 2rem;
+    color: #666;
+}
