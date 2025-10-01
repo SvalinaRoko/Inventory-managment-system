@@ -16,7 +16,7 @@
 @endsection
 @section('features')
 <div class="login-form-container">
-    <form class="login-form " action="/login" method="POST">
+    <form class="login-form " action="/process" method="POST">
         @csrf
         <!-- <div>
             <label>Name

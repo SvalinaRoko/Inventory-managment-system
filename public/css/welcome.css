@@ -15,6 +15,13 @@ margin-bottom: 0;
     width: 140rem;
     min-height: 100%;
 }
+.user-name-cont{
+    background-color: #333;
+    color:bisque;
+    padding: 2rem;
+    width: 100vw;
+    min-height: 100%;
+}
 
 .heading-primary.special-text{
     padding-top:2rem ;

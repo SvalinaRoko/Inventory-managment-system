@@ -42,15 +42,23 @@ body {
 }
 .nav-links{
     display: flex;
+    align-items: center;
     gap: 4rem;
 
     font-weight: 600;
     list-style: none;
 }
 .nav-link{
+    background: none;
+    border: none;
     text-decoration: none;
     color: #333;
     transition: all 400ms;
+}
+.nav-link.logout{
+    font-weight: 600;
+    font-size: 1.8rem;
+    transform: translateY(-0.2rem);
 }
 .nav-link:hover,
 .nav-link:active{

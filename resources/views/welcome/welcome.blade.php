@@ -9,7 +9,14 @@
 @section('nav-links')
 <li><a class="nav-link" href="{{route('about')}}">About us</a></li>
 @auth
-<li><a class="nav-link" href="/">Log out</a></li>
+<li>
+<div>
+    <form  method="POST" action="{{ route('logout') }}">
+        @csrf
+        <button class="nav-link logout" type="submit">Logout</button>
+    </form>
+</div>
+</li>
 @endauth
 @guest
 <li><a class="nav-link" href="{{route('login')}}">Log in</a></li>
