@@ -19,6 +19,7 @@ class RoleMiddleware
             header('location: /');
             exit();
         }
+        
         return $next($request);
     }
 }

@@ -7,13 +7,14 @@
 @endpush
 
 @section('nav-links')
-<li><a class="nav-link" href="/">Home</a></li>
+
 @auth
-<li><a class="nav-link" href="/">Log out</a></li>
+<li><a class="nav-link" href="{{route('loggedin')}}">Home</a></li>
 @endauth
 @guest
-<li><a class="nav-link" href="{{route('login')}}">Log in</a></li>
+<li><a class="nav-link" href="{{route('welcome')}}">Home</a></li>
 @endguest
+
 @endsection
 
 @section('hero')

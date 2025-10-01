@@ -8,7 +8,7 @@
 
 @section('nav-links')
 <li><a class="nav-link" href="{{route('about')}}">About us</a></li>
-<li><a class="nav-link" href="/">Home</a></li>
+<li><a class="nav-link" href="{{route('welcome')}}">Home</a></li>
 @endsection
 
 @section('hero')

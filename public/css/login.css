@@ -58,3 +58,6 @@ input{
     border: #333 solid 3px;
     font-weight: 600;
 }
+.login-nav-btn{
+    display: none;
+}

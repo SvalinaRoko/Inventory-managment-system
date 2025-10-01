@@ -16,8 +16,8 @@ class AuthMiddleware
      */
     public function handle(Request $request, Closure $next): Response
     {
-        if(!Auth::check()){
-        return redirect('/login')->with('message','Please log in to access this page.');
+        if(Auth::check()){
+        return redirect('/welcome/user');
         }
         return $next($request);
     }

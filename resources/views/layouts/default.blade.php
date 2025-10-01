@@ -14,8 +14,21 @@
                 <a href="/"><img class="logo" src="{{ asset('images/RabbitTrack-logo.png') }}" alt="RabbitTrack logo"  width="835" height="810"/></a>
                 <ul class="nav-links">
                     @yield('nav-links')
-                </ul>
-            </nav>
+                    @auth
+                    <li>
+                        <div>
+                    <form  method="POST" action="{{ route('logout') }}">
+                        @csrf
+                        <button class="nav-link logout" type="submit">Log out</button>
+                    </form>
+                </div>
+            </li>
+            @endauth
+            @guest
+            <li><a class="nav-link login-nav-btn" href="{{route('login')}}">Log in</a></li>
+            @endguest
+        </ul>
+    </nav>
         </header>
         <main class="main-content">
             <section class="section-hero">
