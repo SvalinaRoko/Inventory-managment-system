@@ -1,12 +1,38 @@
+.section-hero{
+margin-bottom: 0;
+}
 .heading-primary{
     font-size: 24rem;
     margin: 0 0 5rem 0 ;
-
+    text-wrap: wrap;
 }
-.rabbittrack{
+.heading-primary a{
+    text-decoration: none;
+}
+.rabbittrack-cont{
     background-color: #333;
     color:bisque;
-    padding: 2rem 2rem 0 0;
+    width: 140rem;
+    min-height: 100%;
+}
+
+.heading-primary.special-text{
+    padding-top:2rem ;
+    transition: all 300ms;
+}
+.special-text:hover,
+.special-text:active{
+    cursor: pointer;
+    background-color:bisque;
+    color:#333;
+}
+.roll{
+    border: none;
+    color: bisque;
+}
+.roll:hover,
+.roll:active{
+    color: #333;
 }
 .heading-secondary{
     font-size: 6rem;

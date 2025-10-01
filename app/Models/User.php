@@ -19,8 +19,11 @@ class User extends Authenticatable
      */
     protected $fillable = [
         'name',
+        'surname',
         'email',
+        'is_registered',
         'password',
+        'role'
     ];
 
     /**
@@ -41,8 +44,11 @@ class User extends Authenticatable
     protected function casts(): array
     {
         return [
-            'email_verified_at' => 'datetime',
-            'password' => 'hashed',
+            'password' => 'hashed'
         ];
+    }
+
+    function user(){
+        return $this->hasMany(Product::class);
     }
 }

@@ -1,0 +1,60 @@
+.section-hero,
+.section-features{
+    margin-bottom: 0;
+}
+.header{
+    margin-bottom: 10rem;
+}
+.heading-secondary{
+    text-align: center;
+    font-size: 10rem;
+}
+.login-form{
+    max-width: 140rem;
+    min-height: auto;
+    margin:0 auto;
+
+    display: grid;
+    grid-template-columns:repeat(2,1fr);
+    gap: 5rem 2rem;
+}
+.login-form div:nth-child(4),
+.login-form div:nth-child(2){
+    justify-self: end;
+    align-self: end;
+}
+label{
+    display: flex;
+    flex-direction: column;
+    font-weight: 600;
+}
+input{
+    max-width: 20rem;
+    min-height: 2.5rem;
+    font-weight: 600;
+    font-size: 2rem;
+    border: #333 solid 1px;
+}
+.login-submit-btn{
+    justify-self: center;
+    align-self: center;
+    grid-column: 1/span 2;
+    padding: 1rem;
+    width: 6em;
+    background-color: #333;
+    border: #333 solid 3px;
+    cursor: pointer;
+    color:bisque;
+    letter-spacing: 0.3rem;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 600;
+    transition: all 500ms;
+}
+.login-submit-btn:hover,
+.login-submit-btn:active{
+    background-color: bisque;
+    color: #333;
+    border: #333 solid 3px;
+    font-weight: 600;
+}
